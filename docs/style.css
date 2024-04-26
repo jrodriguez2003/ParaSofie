@@ -1,0 +1,243 @@
+body {
+    color: #333;
+    font-family: Arial, Helvetica, serif;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    background: url(https://img.freepik.com/vector-gratis/fondo-realista-rosa-plata_23-2149997090.jpg?size=626&ext=jpg&ga=GA1.1.1488620777.1712880000&semt=ais) repeat 0 0 #fff;
+  }
+  
+  h1 {
+    background: pink;
+    color: #fff;
+    text-align: center ;
+    margin: 0 0 5% 0;
+    padding: 0.5em;
+    margin: 0 0 5% 0;
+  }
+
+  .container{
+        width: 70%;
+        padding: 45px 20px;
+        margin: auto;
+        margin-top: 5px;
+        text-align: justify;
+        color: transparent;
+  }
+
+  .texto{
+    font-size: 1.2em;
+    color: black;
+}
+  
+  .cardBox {
+    float: left;
+    font-size: 1.5em;
+    margin: 1% 0% 0 25%;
+    perspective: 800px;
+    transition: all 0.3s ease 0s;
+    width: 25%;
+    justify-content: center;
+    margin-bottom: 50px; /* Espacio en la parte inferior */
+  }
+
+  .cardBox:hover .card {
+    transform: rotateY( 180deg);
+  }
+  
+  .card {
+    background-image: url("https://i.pinimg.com/564x/4e/a8/d4/4ea8d44b9e7fd49a7b74359743ea424c.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    cursor: default;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease 0s;
+    width: 100%;
+    -webkit-animation: giro 1s 1;
+    animation: giro 1s 1;
+  }
+  
+  .card p {
+    margin-bottom: 1.8em;
+    text-align: justify;
+  }
+  
+  .card .front,
+  .card .back {
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    color: white;
+    display: block;
+    font-size: 1.2em;
+    height: 100%;
+    padding: 0.8em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .card .front strong {
+    background: #fff;
+    border-radius: 100%;
+    color: #222;
+    font-size: 1.2em;
+    line-height: 30px;
+    padding: 0 7px 4px 6px;
+  }
+  
+  .card .back {
+    transform: rotateY( 180deg);
+  }
+  
+  
+  .card .back a:hover {
+    background: #fff;
+    color: #333;
+    text-shadow: 0 0 1px #333;
+  }
+  
+  .cardBox:nth-child(1) .card .back {
+    background: black;
+  }
+  
+  .cardBox:nth-child(2) .card {
+    -webkit-animation: giro 1.5s 1;
+    animation: giro 1.5s 1;
+  }
+
+  .cardBox2 {
+    float: left;
+    font-size: 1.5em;
+    margin: 1% 0 0 1%;
+    perspective: 800px;
+    transition: all 0.3s ease 0s;
+    width: 23.7%;
+  }
+
+  .cardBox2:hover .card2 {
+    transform: rotateY( 180deg);
+  }
+
+  .card2 {
+    background-image: url("https://i.pinimg.com/736x/a7/66/83/a7668344d5a1bd9887457f9f8bde9981.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    cursor: default;
+    height: 300px;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease 0s;
+    width: 100%;
+    -webkit-animation: giro 1s 1;
+    animation: giro 1s 1;
+  }
+
+  .card2 p {
+    margin-bottom: 1.8em;
+    text-align: justify;
+  }
+  
+  .card2 .front,
+  .card2 .back {
+    backface-visibility: hidden;
+    box-sizing: border-box;
+    color: white;
+    display: block;
+    font-size: 1.2em;
+    height: 100%;
+    padding: 0.8em;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .card2 .front strong {
+    background: #fff;
+    border-radius: 100%;
+    color: #222;
+    font-size: 1.5em;
+    line-height: 30px;
+    padding: 0 7px 4px 6px;
+  }
+  
+  .card2 .back {
+    transform: rotateY( 180deg);
+  }
+  
+  
+  .card2 .back a:hover {
+    background: #fff;
+    color: #333;
+    text-shadow: 0 0 1px #333;
+  }
+
+  .cardBox2:nth-child(2) .card2 .back {
+    background: black;
+  }
+
+
+  @-webkit-keyframes giro {
+    from {
+      transform: rotateY( 180deg);
+    }
+    to {
+      transform: rotateY( 0deg);
+    }
+  }
+  
+  @keyframes giro {
+    from {
+      transform: rotateY( 180deg);
+    }
+    to {
+      transform: rotateY( 0deg);
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .cardBox {
+      margin-left: 2.8%;
+      margin-top: 3%;
+      width: 46%;
+    }
+    .cardBox2 {
+        margin-left: 2.8%;
+        margin-top: 3%;
+        width: 46%;
+      }
+    .card {
+      height: 285px;
+    }
+    .card2 {
+        height: 285px;
+      }
+    .cardBox:last-child {
+      margin-bottom: 3%;
+    }
+    .cardBox2:last-child {
+        margin-bottom: 3%;
+      }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .cardBox {
+      width: 94.5%;
+    }
+    .cardBox2 {
+        width: 94.5%;
+      }
+    .card {
+      height: 260px;
+    }
+    .card2 {
+        height: 260px;
+      }
+  }
